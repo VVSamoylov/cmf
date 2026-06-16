@@ -1,0 +1,34 @@
+<mat-sidenav-container class="container">
+    <!-- Боковое меню -->
+    <mat-sidenav
+      #sidenav
+      [mode]="isMobile ? 'over' : 'side'"
+      [opened]="!isMobile || isSidenavOpen"
+      class="sidenav">
+  
+      <mat-nav-list>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/home">Главная</a>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/buys">Покупки</a>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/sales">Продажи</a>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/company">Компания</a>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/money">Деньги</a>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/warehouse">Склад</a>
+        <a mat-list-item (click)="closeSidenav()" routerLink="/about">О программе</a>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <!-- Основной контент -->
+    <mat-sidenav-content>
+      <!-- Кнопка переключения меню -->
+      <button
+        mat-icon-button
+        (click)="toggleSidenav()"
+        class="menu-toggle">
+        <mat-icon>{{ isSidenavOpen ? 'close' : 'menu' }}</mat-icon>
+      </button>
+  
+      <!-- Основной контент приложения -->
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

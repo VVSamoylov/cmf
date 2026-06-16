@@ -1,0 +1,22 @@
+.container {
+    height: 100vh;
+  }
+  
+  .sidenav {
+    width: 250px;
+  }
+  
+  .menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 767px) {
+    .sidenav {
+      width: 200px;
+    }
+  }
+  
