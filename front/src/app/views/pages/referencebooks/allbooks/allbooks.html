@@ -1,0 +1,107 @@
+<h1>Справочники</h1>
+<mat-grid-list cols="4" rowHeight="50px" gutterSize="15px">
+    <mat-grid-tile colspan="1" rowspan="8">
+        <div class="tile-content">
+            <h2> Общее</h2>
+        <a [routerLink]="['/nomenclature']">Номенклатура</a> 
+        <a [routerLink]="['/worktasks']">Категория номенклатуры</a>
+        <a [routerLink]="['/worktasks']">Классификатор единиц измерения</a>
+        <a [routerLink]="['/worktasks']">Наборы единиц измерения</a> 
+        <a [routerLink]="['/worktasks']">Щаблоны этикеток и ценников</a>
+        <a [routerLink]="['/worktasks']">Щаблоны этикеток ИСМП</a>
+        <a [routerLink]="['/worktasks']">Щтрихкоды</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="12">
+        <div class="tile-content">
+            <h2>Продажи</h2>
+            <a [routerLink]="['/worktasks']">Состояние заказов покупателей</a> 
+            <a [routerLink]="['/worktasks']">Причины отмены заказа</a>
+            <a [routerLink]="['/worktasks']">Виды цен</a>
+            <a [routerLink]="['/worktasks']">Прайс-листы</a> 
+            <a [routerLink]="['/worktasks']">Скидки</a>
+            <a [routerLink]="['/worktasks']">Ценовые группы</a>
+            <a [routerLink]="['/worktasks']">Кассы ККМ</a>
+            <a [routerLink]="['/worktasks']">Способы оплаты</a> 
+            <a [routerLink]="['/worktasks']">Службы доставки</a>
+            <a [routerLink]="['/worktasks']">Параметры расчетов доставки</a>
+            <a [routerLink]="['/worktasks']">Палитра товаров</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="4">
+        <div class="tile-content">
+            <h2>Производство</h2>
+            <a [routerLink]="['/worktasks']">Спецификации</a> 
+            <a [routerLink]="['/worktasks']">Графики работы</a>
+            <a [routerLink]="['/worktasks']">Шаблоны графиков работы</a>
+            <a [routerLink]="['/worktasks']">Бригады</a> 
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <h2>Налоги</h2>
+            <a [routerLink]="['/worktasks']">Виды налогов</a> 
+            <a [routerLink]="['/worktasks']">Ставки НДС</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="5">
+        <div class="tile-content">
+            <h2>Деньги</h2>
+            <a [routerLink]="['/worktasks']">Кассы</a> 
+            <a [routerLink]="['/worktasks']">Банки</a>
+            <a [routerLink]="['/worktasks']">Статьи движения денег</a> 
+            <a [routerLink]="['/worktasks']">Страны мира</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="11">
+        <div class="tile-content">
+            <h2>Компания</h2>
+            <a [routerLink]="['/worktasks']">Реквизиты организации</a> 
+            <a [routerLink]="['/worktasks']">Банковские счета</a>
+            <a [routerLink]="['/worktasks']">Склады и магазины</a> 
+            <a [routerLink]="['/worktasks']">Подразделения</a>
+            <a [routerLink]="['/worktasks']">Направление деятельности</a> 
+            <a [routerLink]="['/worktasks']">Транспортные средства</a>
+            <a [routerLink]="['/worktasks']">Производственные календари</a> 
+            <a [routerLink]="['/worktasks']">Карточки анализа бизнеса</a>
+            <a [routerLink]="['/worktasks']">План счетов</a> 
+            <a [routerLink]="['/worktasks']">Коммисия компании</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="13">
+        <div class="tile-content">
+            <h2>CRM</h2>
+            <a [routerLink]="['/worktasks']">Контрагенты</a> 
+            <a [routerLink]="['/worktasks']">Контакты</a>
+            <a [routerLink]="['/worktasks']">Лиды</a> 
+            <a [routerLink]="['/worktasks']">Договоры</a>
+            <a [routerLink]="['/worktasks']">Сегменты контрагентов</a> 
+            <a [routerLink]="['/worktasks']">Теги</a>
+            <a [routerLink]="['/worktasks']">Источники привлечения</a> 
+            <a [routerLink]="['/worktasks']">Состояние событий и заданий</a>
+            <a [routerLink]="['/worktasks']">Состояние лидов</a> 
+            <a [routerLink]="['/worktasks']">Причины завершения работы с лидом</a>
+            <a [routerLink]="['/worktasks']">Дополнительные условия</a> 
+            <a [routerLink]="['/worktasks']">Роли контактных лиц</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="3">
+        <div class="tile-content">
+            <h2>Склад</h2>
+            <a [routerLink]="['/worktasks']">Состояние заказов на перемещение</a> 
+            <a [routerLink]="['/worktasks']">Варианты комплектации</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <h2>Работы</h2>
+            <a [routerLink]="['/worktasks']">Состояние заказ-нарядов</a>
+            <a [routerLink]="['/worktasks']">Состояние событий и заданий</a> 
+            <a [routerLink]="['/worktasks']">Графики работы</a>
+            <a [routerLink]="['/worktasks']">Шаблоны графиков работы</a> 
+            <a [routerLink]="['/worktasks']">Бригады</a>
+        </div>
+    </mat-grid-tile> 
+    <router-outlet></router-outlet>
+</mat-grid-list>
+  

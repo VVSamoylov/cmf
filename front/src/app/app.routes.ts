@@ -8,7 +8,9 @@ import {Money} from './views/pages/money/money';
 import {Sales} from './views/pages/sales/sales';
 import {Warehouse} from './views/pages/warehouse/warehouse';
 import { Sidebar } from './sidebar/sidebar';
-
+import {WorkTasks} from './views/pages/work-tasks/work-tasks';
+import {Allbooks} from './views/pages/referencebooks/allbooks/allbooks';
+import {Nomenclature} from './views/pages/referencebooks/nomenclature/nomenclature';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -25,6 +27,9 @@ export const routes: Routes = [
   { path: 'money', component: Money },
   { path: 'sales', component: Sales },
   { path: 'warehouse', component: Warehouse },
+  { path: 'worktasks', component:WorkTasks},
+  { path: 'allreferencebooks', component: Allbooks},
+  { path: 'nomenclature', component: Nomenclature},
   { path: 'about', component: About }
 ];
 

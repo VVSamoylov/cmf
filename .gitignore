@@ -1,43 +1,43 @@
 # front folder
-front/frontcmf/dist
-front/frontcmf/tmp
-front/frontcmf/out-tsc
-front/frontcmf/bazel-out
+front/dist
+front/tmp
+front/out-tsc
+front/bazel-out
 
 # Node
-front/frontcmf/node_modules
-front/frontcmf.npm-debug.log
-front/frontcmf/yarn-error.log
+front/node_modules
+front/.npm-debug.log
+front/yarn-error.log
 
 # IDEs and editors
-front/frontcmf/.idea/
-front/frontcmf/.project
-front/frontcmf/.classpath
-front/frontcmf/.c9/
-front/frontcmf/*.launch
-front/frontcmf/.settings/
-front/frontcmf/*.sublime-workspace
+front/.idea/
+front/.project
+front/.classpath
+front/.c9/
+front/*.launch
+front/.settings/
+front/*.sublime-workspace
 
 # Visual Studio Code
-front/frontcmf/.vscode/*
-front/frontcmf/!.vscode/settings.json
-front/frontcmf/!.vscode/tasks.json
-front/frontcmf/!.vscode/launch.json
-front/frontcmf/!.vscode/extensions.json
-front/frontcmf/!.vscode/mcp.json
-front/frontcmf/.history/*
+front/.vscode/*
+front/!.vscode/settings.json
+front/!.vscode/tasks.json
+front/!.vscode/launch.json
+front/!.vscode/extensions.json
+front/!.vscode/mcp.json
+front/.history/*
 
 # Miscellaneous
-front/frontcmf/.angular/cache
-front/frontcmf/.sass-cache/
-front/frontcmf/connect.lock
-front/frontcmf/coverage
-front/frontcmf/libpeerconnection.log
-front/frontcmf/testem.log
-front/frontcmf/typings
-front/frontcmf/__screenshots__/
+front/.angular/cache
+front/.sass-cache/
+front/connect.lock
+front/coverage
+front/libpeerconnection.log
+front/testem.log
+front/typings
+front/__screenshots__/
 
 # System files
-front/frontcmf/.DS_Store
-front/frontcmf/Thumbs.db
+front/.DS_Store
+front/Thumbs.db
 

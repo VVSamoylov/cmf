@@ -1,0 +1,67 @@
+.tile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    padding: 16px;
+}
+h1{
+    text-align: center;
+}
+.button-group {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    
+  }
+  
+  .button-group button {
+    height: 40px;
+    min-width: 50px;
+  }
+  
+  /* Для компактного вида на мобильных */
+  @media (max-width: 600px) {
+    .button-group {
+      flex-wrap: wrap;
+    }
+    .button-group button {
+      min-width: 80px;
+      font-size: 14px;
+    }
+  }
+  
+  .seven-col-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .seven-col-table th,
+  .seven-col-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .seven-col-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .seven-col-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .seven-col-table button {
+    padding: 4px 8px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+

@@ -1,0 +1,56 @@
+<mat-grid-list cols="4" rowHeight="50px" gutterSize="15px">
+    <mat-grid-tile colspan="1" rowspan="4">
+        <div class="tile-content">
+            <h2> Задания</h2>
+        <a [routerLink]="['/worktasks']">Задания на работу</a> 
+        <a [routerLink]="['/worktasks']">Мои напоминия</a>
+        <a [routerLink]="['/worktasks']">Календарь</a>
+        </div>
+        
+        
+
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <h2>CRM</h2>
+            <a href="#" class="grid-link">События</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <h2>Сервис</h2>
+            <a href="#" class="grid-link">Поиск контрагентов</a>
+            <a href="#" class="grid-link">Ссылка 2</a>
+            <a href="#" class="grid-link">Ссылка 3</a>
+            <a href="#" class="grid-link">Ссылка 4</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <h2>Документы</h2>
+            <a href="#" class="grid-link">Продажи</a>
+            <a href="#" class="grid-link">Закупки</a>
+            <a href="#" class="grid-link">Склад</a>
+            <a href="#" class="grid-link">Производство</a>
+            <a href="#" class="grid-link">Банк и касса</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <h2>Аналитика</h2>
+            <a href="#" class="grid-link">Отчёты</a>
+            <a href="#" class="grid-link">Ссылка 2</a>
+            <a href="#" class="grid-link">Ссылка 3</a>
+            <a href="#" class="grid-link">Ссылка 4</a>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" rowspan="2">
+        <div class="tile-content">
+            <a [routerLink]="['/allreferencebooks']"><h2>Справочники</h2></a>
+        </div>
+    </mat-grid-tile>
+    
+    <router-outlet></router-outlet>
+    
+</mat-grid-list>
+  
