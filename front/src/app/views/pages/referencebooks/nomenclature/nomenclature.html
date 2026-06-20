@@ -78,11 +78,11 @@
         
 
     </mat-grid-tile>
-    <mat-grid-tile colspan="1" rowspan="8">
-        <div class="tile-content">
-            <h2> Общее</h2>
-  
-        </div>
+    <mat-grid-tile   colspan="2" rowspan="3" class="toggle">
+      <mat-button-toggle-group [(value)]="isGroup" (change)="setGroup()">
+        <mat-button-toggle value=false>Категории</mat-button-toggle>
+        <mat-button-toggle value=true>Группы</mat-button-toggle>
+      </mat-button-toggle-group>
     </mat-grid-tile>
     
 </mat-grid-list>    
@@ -110,38 +110,105 @@
             </tbody>
         </table>
     </mat-grid-tile>
-</mat-grid-list>
-<mat-grid-list  cols="10"  gutterSize="15px">
-    <h1>Дополнительно</h1>
-    <mat-grid-tile colspan="8" >
-        <mat-tab-group [(selectedIndex)]="selectedTabIndex">
-            <mat-tab label="Фильтры">
-              <div style="padding: 20px;">
-                <mat-slide-toggle [(ngModel)]="onRemains"   >
-                    Остатки
-                </mat-slide-toggle>
-                <mat-slide-toggle [(ngModel)]="onPrice"   >
-                    Цены
-                </mat-slide-toggle>
-                <h3>Список всех товаров</h3>
-                <p>Здесь может быть таблица товаров с фильтрами</p>
-              </div>
-            </mat-tab>
-          
-            <mat-tab label="Остатки">
-              <div style="padding: 20px;">
-                <h3>Товары по категориям</h3>
-                <p>Дерево категорий с возможностью выбора</p>
-              </div>
-            </mat-tab>
-          
-            <mat-tab label="Корзина(пустая)" >
-              <div style="padding: 20px;">
-                <h3>Избранные позиции</h3>
-                <p>Эта вкладка пока недоступна</p>
-              </div>
-            </mat-tab>
-        </mat-tab-group>
-         
+    <mat-grid-tile class="border" colspan="2" >
+      <h2>Категории/Группы</h2>
+       
     </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list  cols="10" rowHeight="450px"  style="width: 100%;" gutterSize="10px">
+  <mat-grid-tile class="left-aligned-tile"  colspan="8" >
+    <mat-tab-group style="width: 100%;" dynamicHeight="true" [(selectedIndex)]="selectedTabIndex">
+      
+        <mat-tab style="width: 100%; padding: 10px;" label="Фильтры">
+          <mat-grid-list  cols="10" style="width: 100%; padding-top: 10px;"   gutterSize="10px">
+            <mat-grid-tile colspan="4" rowspan="1" class="toggle">
+              <mat-slide-toggle [(ngModel)]="onRemains"   >
+                  Остатки
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="4" rowspan="1" class="toggle">  
+              <mat-slide-toggle colspan="4" [(ngModel)]="onPrice"   >
+                  Цены
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            <mat-grid-tile  colspan="4" rowspan="1"  >
+              <div *ngIf="onRemains">
+                <mat-form-field appearance="fill">
+                  <mat-label>Остатки</mat-label>
+                  <mat-select [(value)]="remains">
+                    <mat-option *ngFor="let remainItem of arrRemains" [value]="remains">
+                      {{ remainItem }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </mat-grid-tile>
+            
+            <mat-grid-tile  colspan="4" rowspan="1"  >
+              <div *ngIf="onPrice">
+                <mat-form-field appearance="fill">
+                  <mat-label>Цены</mat-label>
+                  <mat-select [(value)]="price">
+                    <mat-option *ngFor="let priceItem of arrPrice" [value]="price">
+                      {{ priceItem }}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </mat-grid-tile>
+            <mat-grid-tile style="height: 100%; " colspan="8" rowspan="1"  >
+              <div *ngIf="onPrice">
+                <mat-form-field style="padding-top: 10px;" colspan="1" rowspan="1"  appearance="outline" >
+                  <mat-label>Цена от</mat-label>
+                  <input matInput [(ngModel)]="rangePrice.firstPrice">
+                </mat-form-field>
+              
+                <mat-form-field colspan="1" rowspan="1"  appearance="outline" >
+                  <mat-label>Цена до</mat-label>
+                  <input matInput [(ngModel)]="rangePrice.lastPrice" >
+                </mat-form-field>
+              </div>
+            </mat-grid-tile>
+          </mat-grid-list>
+          <mat-grid-list cols="8" style="width: 100%;"  gutterSize="10px">
+            <mat-grid-tile colspan="1" rowspan="1" class="toggle">
+              <mat-slide-toggle [(ngModel)]="onRemains"   >
+                  Запас
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="1" rowspan="1" class="toggle">  
+              <mat-slide-toggle colspan="4" [(ngModel)]="onPrice"   >
+                  Услуга
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="1" rowspan="1" class="toggle">
+              <mat-slide-toggle [(ngModel)]="onRemains"   >
+                  Работа
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="2" rowspan="1" class="toggle">  
+              <mat-slide-toggle colspan="4" [(ngModel)]="onPrice"   >
+                  Операция
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            <mat-grid-tile colspan="2" rowspan="1" class="toggle">
+              <mat-slide-toggle [(ngModel)]="onRemains"   >
+                  Вид работ
+              </mat-slide-toggle>
+            </mat-grid-tile>
+            
+          </mat-grid-list>
+        </mat-tab>      
+        <mat-tab label="Корзина(пустая)" >
+          <div style="padding: 20px;">
+            <h3>Избранные позиции</h3>
+            <p>Эта вкладка пока недоступна</p>
+          </div>
+        </mat-tab>
+    </mat-tab-group>
+     
+</mat-grid-tile>
+
+
+    
 </mat-grid-list>

@@ -65,3 +65,41 @@ h1{
     cursor: pointer;
   }
 
+.left{
+  text-align: left;
+}
+.left-aligned-tile ::ng-deep .mat-grid-tile-content {
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  width: 80%;
+}
+.center{
+  justify-content: center;
+}
+.toggle{
+  padding-top: 10px;
+}
+.border{
+  border-color: dimgray;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-top{
+  border-top-color: dimgray;
+  border-top-width: 2px;
+  border-top-style: solid;
+}
+.border-left{
+  border-left-color: dimgray;
+  border-left-width: 2px;
+  border-left-style: solid;
+  
+}
+.border-bottom{
+  border-bottom-color: dimgray;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  
+}

@@ -1,23 +1,47 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatInputModule } from '@angular/material/input';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 @Component({
   selector: 'app-nomenclature',
-  imports: [MatGridListModule, MatButtonModule, MatIconModule, MatMenuModule, MatTabsModule, FormsModule, MatSlideToggleModule], 
+  imports: [MatGridListModule, MatButtonModule, 
+                  MatIconModule, MatMenuModule, 
+                  MatTabsModule, FormsModule, 
+                  MatSlideToggleModule, MatFormFieldModule, 
+                  MatSelectModule, CommonModule, 
+                  MatInputModule, MatExpansionModule, MatButtonToggleModule], 
   templateUrl: './nomenclature.html',
   styleUrl: './nomenclature.css',
 })
 export class Nomenclature {
 
   selectedTabIndex = 0;
-  onRemains=true;
-  onPrice=false;
+  onRemains=false;
+  onPrice=true;
+  arrPrice=['Розничная цена', 'Учетная цена'];
+  price='';
+  // Список типов остатков
+  arrRemains=['Все', 'В наличии', 'Отсутствуют'];
+  remains='';
+  isGroup=false;
+  setGroup(){
+    this.isGroup=!this.isGroup;
+  }
 
+  rangePrice = {
+    firstPrice: 0,
+    lastPrice: 0
+  };
   selectFirstTab() {
     this.selectedTabIndex = 0;
   }
