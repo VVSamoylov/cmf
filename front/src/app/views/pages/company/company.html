@@ -1,1 +1,128 @@
-<p>Компания works!</p>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Компания</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Реквизиты организации')" routerLink="/">Реквизиты организации</a>
+                <a mat-list-item class="grid-link" (click)="test('Банковские счета')" routerLink="/"> Банковские счета</a>
+                <a mat-list-item class="grid-link" (click)="test('Склады')" routerLink="/">Склады</a>
+                <a mat-list-item class="grid-link" (click)="test('Подразделения')" routerLink="/">Подразделения</a>
+                <a mat-list-item class="grid-link" (click)="test('Сотрудники')" routerLink="/">Сотрудники </a>
+                <a mat-list-item class="grid-link" (click)="test('Планы счетов')" routerLink="/">Планы счетов</a>
+                <a mat-list-item class="grid-link" (click)="test('Все справочники')" routerLink="/">Все справочники</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Финансовые операции</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Операции')" routerLink="/">Операции</a>
+                <a mat-list-item class="grid-link" (click)="test('Прочие затраты(расходы)')" routerLink="/">Прочие затраты(расходы)</a>
+                <a mat-list-item class="grid-link" (click)="test('Начисление налогов')" routerLink="/">Начисление налогов</a>
+                <a mat-list-item class="grid-link" (click)="test('Передачи между организациями')" routerLink="/">Передачи между организациями </a>
+                <a mat-list-item class="grid-link" (click)="test('Закрытие месяца')" routerLink="/">Закрытие месяца</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Развитие бизнеса</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Анализ бизнеса')" routerLink="/">Анализ бизнеса</a>
+                <a mat-list-item class="grid-link" (click)="test('Показатели бизнеса')" routerLink="/">Показатели бизнеса</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Аналитика</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Состояние компании')" routerLink="/">Состояние компании</a>
+                <a mat-list-item class="grid-link" (click)="test('Отчеты')" routerLink="/">Отчеты</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Настройки</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Расширенные настройки')" routerLink="/advancedsettings">Расширенные настройки</a>
+                <a mat-list-item class="grid-link" (click)="test('Интеграция с другими программами')" routerLink="/">Интеграция с другими программами</a>
+                <a mat-list-item class="grid-link" (click)="test('Обмен электронными документами')" routerLink="/">Обмен электронными документами</a>
+                <a mat-list-item class="grid-link" (click)="test('Администрирование')" routerLink="/">Администрирование</a>
+                <a mat-list-item class="grid-link" (click)="test('Удаление объектов')" routerLink="/">Удаление объектов</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Начальные остатки</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Ввод начальных остатков')" routerLink="/">Ввод начальных остатков</a>
+                <a mat-list-item class="grid-link" (click)="test('Загрузка данных из Управление Торговлей')" routerLink="/">Загрузка данных из Управление Торговлей</a>
+                <a mat-list-item class="grid-link" (click)="test('Загрузка данных из 1С Отчётность предпринимателя')" routerLink="/">Загрузка данных из 1С "Отчётность предпринимателя"</a>
+                <a mat-list-item class="grid-link" (click)="test('Загрузка данных из Эксель')" routerLink="/">Загрузка данных из Эксель</a>
+                <a mat-list-item class="grid-link" (click)="test('Загрузить данные с сайта')" routerLink="/">Загрузить данные с сайта</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card class="company-card" appearance="outlined">
+            <mat-card-header>
+              <mat-card-title>Сервис</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <a mat-list-item class="grid-link" (click)="test('Дополнительные возможности')" routerLink="/">Дополнительные возможности</a>
+            </mat-card-content>
+            <mat-card-footer class="company-card-footer">
+              <mat-chip-set aria-label="Chihuahua traits">
+              
+              </mat-chip-set>
+            </mat-card-footer>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

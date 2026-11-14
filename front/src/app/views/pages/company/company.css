@@ -1,0 +1,13 @@
+.company-card {
+    max-width: 400px;
+}
+  
+.company-card-footer {
+    padding: 16px;
+}
+.grid-link:hover{
+    cursor: pointer;
+}
+.grid-link:active{
+    color: blue;
+}

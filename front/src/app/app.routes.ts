@@ -11,6 +11,7 @@ import { Sidebar } from './sidebar/sidebar';
 import {WorkTasks} from './views/pages/work-tasks/work-tasks';
 import {Allbooks} from './views/pages/referencebooks/allbooks/allbooks';
 import {Nomenclature} from './views/pages/referencebooks/nomenclature/nomenclature';
+import {Advancedsettings} from './views/pages/advancedsettings/advancedsettings';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
@@ -30,7 +31,8 @@ export const routes: Routes = [
   { path: 'worktasks', component:WorkTasks},
   { path: 'allreferencebooks', component: Allbooks},
   { path: 'nomenclature', component: Nomenclature},
-  { path: 'about', component: About }
+  { path: 'about', component: About },
+  {path: 'advancedsettings', component: Advancedsettings}
 ];
 
 @NgModule({

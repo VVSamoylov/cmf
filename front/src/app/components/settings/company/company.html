@@ -1,0 +1,79 @@
+<h1 class="textcenter">Общие настройки для организации</h1>
+<div >
+    <form  ngNoForm >
+        <mat-checkbox >Несколько компаний</mat-checkbox>              
+        <div class="companyName-form-fields">
+            <label>Компания: </label>
+            <mat-form-field >
+                <input matInput placeholder="Наименование компании" required />
+            </mat-form-field>       
+        </div>
+        <mat-list role="list">
+            <mat-list-item role="listitem">
+                <mat-checkbox >Несколько компаний</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Несколько компаний</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Несколько компаний</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Несколько подразделений</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Несколько направлений деятельности</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Регламентная отчетность тоько для ИП</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Кассовый метод учета доходов и расходов</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Бюджетирование</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Имущество</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Учет оригиналов первичных документов</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Несколько компаний</mat-checkbox>    
+            </mat-list-item>
+          </mat-list>
+
+          <mat-list>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Продукция ВЕТИС</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Продукция ГИСМ</mat-checkbox>    
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Алкогольная продукция</mat-checkbox>
+            </mat-list-item> 
+                <mat-list role="list">
+                    <mat-list-item role="listitem">
+                        <mat-label>Дата начала регистрации продаж в ЕГАИС</mat-label>
+                        <mat-form-field>
+                            <input matInput [matDatepicker]="datepicker" [(ngModel)]="value">
+                            <mat-datepicker #datepicker/>
+                            <mat-datepicker-toggle [for]="datepicker" matSuffix/>
+                        </mat-form-field>
+                    </mat-list-item>
+                    <mat-list-item role="listitem">
+                        <mat-checkbox >Выгружать продажи немаркированной продукции в ЕГАИС</mat-checkbox>
+                    </mat-list-item>
+                </mat-list>  
+          </mat-list>
+
+          <mat-list>
+            <mat-list-item role="listitem">
+                <mat-checkbox >Средства индивидуальной защиты</mat-checkbox>    
+            </mat-list-item>
+          </mat-list>
+    </form>
+</div>
+

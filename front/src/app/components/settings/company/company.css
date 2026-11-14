@@ -1,0 +1,16 @@
+.textcenter{
+    text-align: center;
+}
+.companyName-form-fields{
+    width: 550px;
+    margin-right: 0;
+    padding-right: 0;
+}
+.company-container{
+    text-align: left;
+    justify-content: left;
+}
+.mat-grid-tile-content{
+    justify-content: left;
+    align-items:baseline;
+}
